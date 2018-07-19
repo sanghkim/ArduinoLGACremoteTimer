@@ -56,12 +56,11 @@ void loop() {
     switch (k){
         case 0:
         case 1:
-        case 2:
               delay(1800000); // 30min = 1000*60*30
               break;
+        case 2:      
         case 3:
         case 4:
-        case 5:
               delay(1200000); // 20min = 1000*60*20   
               break;
         default:
@@ -93,10 +92,10 @@ void loop() {
       case 3:
       case 4:
       case 5:
-            delay(1200000); // 40min = 1000*60*40   
+            delay(2400000); // 40min = 1000*60*40   
             break;
       default:
-            delay(900000); // 55min = 1000*60*45   
+            delay(270000); // 55min = 1000*60*45   
             break;
     }// end of switch(k)   
   }
