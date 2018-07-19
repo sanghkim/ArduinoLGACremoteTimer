@@ -12,10 +12,9 @@ SHORT three times: Power Off
 
 1) to send Power On / delay 5s
 2) to send Mode 1 / delay 2s/ Mode 2 / 
-3) to wait 30 min/20m/15m at every 3 hours
+3) to wait 30 min/20m/15m for 2hours / 3hours / 4 hours
 4) to send Power off 
-5) to wait 30 min/40m/45m at every 3 hours
-
+5) to wait 30 min/40m/45m for 2hours / 3hours / 4hours
 That's all folks,
 
 Hope to use my code easily.
