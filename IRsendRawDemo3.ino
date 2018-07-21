@@ -76,8 +76,6 @@ void loop() {
         case 11:
         case 12:
         case 13:
-        case 14:
-        case 15:
               Onmin = 10;
               break;
         default:
@@ -101,35 +99,36 @@ void loop() {
   
     ///////////////////////////////////////////////////////////////////////////////////////
     //   delay(2000);
-    switch (k){
-        case 0:
-        case 1:
-        case 2:      
-        case 3:        
-              Offmin = 15;
-              break;
-
-        case 4:
-        case 5:
-        case 6:
-        case 7:
-        case 8:
-        case 9:        
-              Offmin = 18;              
-              break;
-
-        case 10:
-        case 11:
-        case 12:
-        case 13:
-        case 14:
-        case 15:
-              Offmin = 20;   
-              break;
-        default:
-              Offmin = 22;
-            break;
-    }// end of switch(k)   
+//    switch (k){
+//        case 0:
+//        case 1:
+//        case 2:      
+//        case 3:        
+//              Offmin = 15;
+//              break;
+//
+//        case 4:
+//        case 5:
+//        case 6:
+//        case 7:
+//        case 8:
+//        case 9:        
+//              Offmin = 18;              
+//              break;
+//
+//        case 10:
+//        case 11:
+//        case 12:
+//        case 13:
+//        case 14:
+//        case 15:
+//              Offmin = 20;   
+//              break;
+//        default:
+//              Offmin = 22;
+//            break;
+//    }// end of switch(k)   
+    Offmin = 30-Onmin;
     delay(Offmin * 60* 1000);
   }
 }
