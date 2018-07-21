@@ -26,7 +26,7 @@ void setup()
 }
 
 void loop() {
-  for(int k = 0; k < 9 ; k++) // for 9 hours
+  for(int k = 0; k < 18 ; k++) // for 9 hours = 30min * 18
   {
     digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
     delay(1000);                       // wait for a second
@@ -56,15 +56,30 @@ void loop() {
     switch (k){
         case 0:
         case 1:
-              delay(1800000); // 30min = 1000*60*30
-              break;
         case 2:      
-        case 3:
+        case 3:        
+              delay(900000); // 15min = 1000*60*15
+              break;
+
         case 4:
-              delay(1200000); // 20min = 1000*60*20   
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:         
+              delay(720000); // 12min = 1000*60*12                
+              break;
+
+        case 10:
+        case 11:
+        case 12:
+        case 13:
+        case 14:
+        case 15:
+              delay(600000); // 10min = 1000*60*10     
               break;
         default:
-              delay(900000); // 15min = 1000*60*15   
+              delay(480000); // 8min = 1000*60*8   
               break;
     }// end of switch(k)
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -84,18 +99,34 @@ void loop() {
     ///////////////////////////////////////////////////////////////////////////////////////
     //   delay(2000);
     switch (k){
-      case 0:
-      case 1:
-      case 2:
-            delay(1800000); // 30min = 1000*60*30
-            break;
-      case 3:
-      case 4:
-      case 5:
-            delay(2400000); // 40min = 1000*60*40   
-            break;
-      default:
-            delay(270000); // 55min = 1000*60*45   
+        case 0:
+        case 1:
+        case 2:      
+        case 3:        
+              //delay(1800000); // 30min = 1000*60*30
+              delay(900000); // 15min = 1000*60*15
+              break;
+
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:        
+              //delay(1200000); // 20min = 1000*60*20   
+              delay(1080000); // 18min = 1000*60*18                
+              break;
+
+        case 10:
+        case 11:
+        case 12:
+        case 13:
+        case 14:
+        case 15:
+              delay(1200000); // 20min = 1000*60*20     
+              break;
+        default:
+              delay(480000); // 22min = 1000*60*22
             break;
     }// end of switch(k)   
   }
